@@ -8,7 +8,7 @@ h1 {
 .orange{
     color: rgb(235, 185, 93);
 }
-section{
+.flexible-container{
     display: flex;
     margin-bottom: 150px;
 }
@@ -36,4 +36,32 @@ section{
     background-image: url(images/dream-bg.png);
     background-repeat: no-repeat;
     background-position: right;
+}
+.shadow{
+    margin: 0 60px;
+    box-shadow: rgb(70, 67, 67) 10px 10px 40px;
+    padding: 20px 40px;
+    transition: 0.3s all;
+    border-radius: 10px;
+}
+.mid{
+    background-image: url(images/exp-bg.png);
+    background-repeat: no-repeat;
+    background-position: left;
+}
+.shadow:hover{
+    transform: scale(1.05);
+}
+#bord{
+    border-left: 10px solid;
+    border-image: linear-gradient(orange, red);
+    border-image-slice: 1;
+}
+#err{
+    border-left: 10px solid;
+    border-image: linear-gradient(rgb(35, 98, 214), rgb(53, 179, 230));
+    border-image-slice: 1;
+}
+footer p{
+    text-align: center;
 }
